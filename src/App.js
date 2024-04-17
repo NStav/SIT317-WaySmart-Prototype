@@ -1,10 +1,14 @@
 import './App.css';
+import React from 'react'
+import {Routes, Route} from 'react-router-dom'
+import Homepage from './routes/Homepage';
 
+document.title = "WaySmartLandingPage"
 function App() {
   return (
-    <div className="App">
-      <p>test2</p>
-    </div>
+    <Routes>
+      <Route path='/' element={<Homepage/>}/>
+    </Routes>
   );
 }
 
