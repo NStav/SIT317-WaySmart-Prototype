@@ -1,10 +1,10 @@
 import React from 'react'
-
+import './Title.css'
 const Title = () =>
 {
     return(
         <div className='TitleText'>
-            <h1>Test fr fr this time</h1>
+            <h1>WaySmart High-Fidelity Prototype</h1>
         </div>     
     ) 
     

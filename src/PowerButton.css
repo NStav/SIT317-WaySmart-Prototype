@@ -1,0 +1,9 @@
+.PowerButton button{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 600px;
+    background: transparent;
+    bottom: 20px;
+    border: none;
+}
