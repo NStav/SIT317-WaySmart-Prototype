@@ -8,7 +8,7 @@ function Homepage() {
 
     var [status, setStatus] = React.useState('none')
     const PowerButtonClick = () => {
-        status == "none" ? setStatus("block") : setStatus("none")
+        status === "none" ? setStatus("block") : setStatus("none")
     }
 
     return(
