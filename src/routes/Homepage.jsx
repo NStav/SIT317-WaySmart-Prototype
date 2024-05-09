@@ -4,6 +4,7 @@ import Scale from "../Scale";
 import Screen from "../Screen";
 import PowerButton from '../PowerButton';
 import ScaleImg from "../img/Scale(Figma).png"
+//test
 function Homepage() {
 
     var [status, setStatus] = React.useState('none')
