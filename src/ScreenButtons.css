@@ -4,7 +4,7 @@
     position: absolute;
     left: 97px;
     background: transparent;
-    bottom: 34px;
+    top: 664px;
     /*border: none;*/
 }
 .ScreenButton2 button{
@@ -14,7 +14,7 @@
     left: 161px;
     background: transparent;
     bottom: 35px;
-    /*border: none;*/
+    border: none;
 }
 .ScreenButton3 button{
     height: 40px;
@@ -22,6 +22,6 @@
     position: absolute;
     left: 226px;
     background: transparent;
-    bottom: 34px;
+    top: 664px;
     /*border: none;*/
 }
