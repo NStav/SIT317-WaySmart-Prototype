@@ -7,8 +7,14 @@ import FoodButtons from '../FoodButtons';
 import SettingsScreen from '../SettingsScreen';
 import ScreenButtons from '../ScreenButtons';
 import QualityScreen from '../QualityScreen';
+import Food from '../Food'
 
 import ScaleImg from "../img/Scale(Figma).png"
+import Chicken from "../img/chicken.png"
+import Beef from "../img/beef.png"
+import Apple from "../img/apple.png"
+import Watermelon from "../img/watermelon.png"
+
 function Homepage() {
 
     var [status, setStatus] = React.useState('none')
@@ -219,7 +225,10 @@ function Homepage() {
     <div>
         <Title/>
         <Scale img = {ScaleImg}/>
-
+        <Food img = {Apple}/>
+        <Food img = {Watermelon}/>
+        <Food img = {Beef}/>
+        <Food img = {Chicken}/>
         <div style={{display: status}}>
             <Screen
                 //default screen

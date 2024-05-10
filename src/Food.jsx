@@ -1,0 +1,12 @@
+import React from 'react'
+import './Food.css'
+const Food = (props) =>
+{
+    return(
+        <div className='Food'>
+            <img src={props.img} alt="img" />
+        </div>     
+    ) 
+    
+}
+export default Food

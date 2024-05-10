@@ -1,0 +1,9 @@
+.Food{
+    display: inline-block;
+}
+
+.Food img {
+    margin-left: auto;
+    display: inline-block;
+    width: 200px;
+}

@@ -1,8 +1,10 @@
 .Scale{
     margin-right: auto;
     margin-left: 50px;
+    display: inline-block;
 }
 
 .Scale img {
     width: 650px;
+    display: inline-block;
 }
