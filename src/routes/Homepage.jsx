@@ -251,15 +251,15 @@ function Homepage() {
             />
             <Screen
                 //apple screen
-                Weight = "Weight: 200.0g"
-                Calories = "Calories: 95"
+                Weight = "Weight: 100.1g"
+                Calories = "Calories: 48"
                 Macronutrients = "Macronutrients"
-                Carbs = "Carbs: 25.0g"
+                Carbs = "Carbs: 13.0g"
                 Fats = "Fats: 0.0g"
-                Protein = "Protein: 1.0g"
-                Sugars = "Sugars: 19.0g"
+                Protein = "Protein: 0.5g"
+                Sugars = "Sugars: 9.7g"
                 Micronutrients = "Micronutrients"
-                Line1 = "Fibre: 3.0g"
+                Line1 = "Fibre: 1.8g"
                 Line2 = "Calcium: 0.1g"
                 Line3 = "Iron: 0.1g"
                 Line4 = "Potassium: 0.2g"
@@ -276,7 +276,7 @@ function Homepage() {
             />
             <Screen
                 //Beef screen
-                Weight = "Weight: 300g"
+                Weight = "Weight: 300.0g"
                 Calories = "Calories: 864"
                 Macronutrients = "Macronutrients"
                 Carbs = "Carbs: 0.0g"
@@ -300,7 +300,7 @@ function Homepage() {
             />
             <Screen
                 //Watermelon screen
-                Weight = "Weight: 294.0g"
+                Weight = "Weight: 294.4g"
                 Calories = "Calories: 89"
                 Macronutrients = "Macronutrients"
                 Carbs = "Carbs: 21.5g"
@@ -349,13 +349,9 @@ function Homepage() {
         </div>
         <PowerButton function = {PowerButtonClick}/>
         <FoodButtons 
-            text1 = "apple"
             function1 = {AppleButtonClick}
-            text2 = "watermelon" 
             function2 = {WatermelonButtonClick}
-            text3 = "beef"
             function3 = {BeefButtonClick}
-            text4 = 'chicken'
             function4 = {ChickenButtonClick}
         />
         <ScreenButtons

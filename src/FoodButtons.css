@@ -1,23 +1,35 @@
 .FoodButtons1 button{
-    position: absolute;
-    right: 200px;
-    top: 200px;
+    position:absolute;
+    left: 715px;
+    top: 535px;
+    height: 200px;
+    width: 180px;
+    background: none;
 }
 
 .FoodButtons2 button{
     position: absolute;
-    right: 200px;
-    top: 230px;
+    left: 910px;
+    top: 535px;
+    height: 200px;
+    width: 180px;
+    background: none;
 }
 
 .FoodButtons3 button{
     position: absolute;
-    right: 200px;
-    top: 260px;
+    left: 1105px;
+    top: 535px;
+    height: 200px;
+    width: 190px;
+    background: none;
 }
 
 .FoodButtons4 button{
     position: absolute;
-    right: 200px;
-    top: 290px;
+    left: 1310px;
+    top: 535px;
+    height: 200px;
+    width: 190px;
+    background: none;
 }
