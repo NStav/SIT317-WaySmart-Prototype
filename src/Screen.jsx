@@ -3,7 +3,7 @@ import './Screen.css'
 const Screen = (props) =>
 {
     return(
-        <div style={{display: props.ScreenVisibilty}}>
+        <div style={{display: props.ScreenVisibility}}>
             <div className='Screen'>
                 <p>
                     {props.Weight} <br/>
@@ -31,6 +31,7 @@ const Screen = (props) =>
                     {props.Line3} <br/>
                     {props.Line4} <br/>
                     {props.Line5} <br/>
+                    {props.Line6} <br/>
                 </p>
             </div>
         </div>

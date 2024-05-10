@@ -1,0 +1,16 @@
+.QualityTitle{
+    color: white;
+    position: absolute;
+    left: 95px;
+    top: 180px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.QualityScreen{
+    color: white;
+    position: absolute;
+    left: 95px;
+    top: 230px;
+    font-size: 20px;
+}

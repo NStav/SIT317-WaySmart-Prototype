@@ -1,0 +1,27 @@
+.ScreenButton1 button{
+    height: 40px;
+    width: 38px;
+    position: absolute;
+    left: 97px;
+    background: transparent;
+    bottom: 34px;
+    /*border: none;*/
+}
+.ScreenButton2 button{
+    height: 39px;
+    width: 40px;
+    position: absolute;
+    left: 161px;
+    background: transparent;
+    bottom: 35px;
+    /*border: none;*/
+}
+.ScreenButton3 button{
+    height: 40px;
+    width: 38px;
+    position: absolute;
+    left: 226px;
+    background: transparent;
+    bottom: 34px;
+    /*border: none;*/
+}

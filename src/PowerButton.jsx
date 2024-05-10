@@ -7,6 +7,5 @@ const PowerButton = (props) =>
             <button onClick={props.function}>{props.text}</button>
         </div>     
     ) 
-    
 }
 export default PowerButton

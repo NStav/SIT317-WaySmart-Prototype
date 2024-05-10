@@ -1,0 +1,23 @@
+.FoodButtons1 button{
+    position: absolute;
+    right: 200px;
+    top: 200px;
+}
+
+.FoodButtons2 button{
+    position: absolute;
+    right: 200px;
+    top: 230px;
+}
+
+.FoodButtons3 button{
+    position: absolute;
+    right: 200px;
+    top: 260px;
+}
+
+.FoodButtons4 button{
+    position: absolute;
+    right: 200px;
+    top: 290px;
+}
