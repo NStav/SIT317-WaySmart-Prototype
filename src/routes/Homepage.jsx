@@ -8,12 +8,14 @@ import SettingsScreen from '../SettingsScreen';
 import ScreenButtons from '../ScreenButtons';
 import QualityScreen from '../QualityScreen';
 import Food from '../Food'
+import FoodOnScale from '../FoodOnScale';
 
 import ScaleImg from "../img/Scale(Figma).png"
 import Chicken from "../img/chicken.png"
 import Beef from "../img/beef.png"
 import Apple from "../img/apple.png"
 import Watermelon from "../img/watermelon.png"
+import Return from '../img/Return.png'
 
 function Homepage() {
 
@@ -30,10 +32,22 @@ function Homepage() {
     var [ChickenQualityVis, setChickenQualityVis] = React.useState('none')
     var [SettingsVis, setSettingsVis] = React.useState('none')
     var [CurrentFood, setCurrentFood] = React.useState('none')
+    var [AppleImgVis, setAppleImgVis] = React.useState('inline-block')
+    var [BeefImgVis, setBeefImgVis] = React.useState('inline-block')
+    var [WatermelonImgVis, setWatermelonImgVis] = React.useState('inline-block')
+    var [ChickenImgVis, setChickenImgVis] = React.useState('inline-block')
+    var [AppleImgVis2, setAppleImgVis2] = React.useState('none')
+    var [BeefImgVis2, setBeefImgVis2] = React.useState('none')
+    var [WatermelonImgVis2, setWatermelonImgVis2] = React.useState('none')
+    var [ChickenImgVis2, setChickenImgVis2] = React.useState('none')
+
+    var [ReturnImgVis, setReturnImgVis] = React.useState('none')
+    var [ReturnImgVis2, setReturnImgVis2] = React.useState('none')
+    var [ReturnImgVis3, setReturnImgVis3] = React.useState('none')
+    var [ReturnImgVis4, setReturnImgVis4] = React.useState('none')
 
     const PowerButtonClick = () => {
-        status === "none" ? setStatus("block") : setStatus("none")
-
+        status === 'none' ? setStatus('block') : setStatus('none')
     }
 
     const AppleButtonClick = () => {
@@ -50,11 +64,28 @@ function Homepage() {
             setChickenQualityVis('none')
             setSettingsVis('none')
             setCurrentFood('apple')
+            setBeefImgVis2('none')
+            setWatermelonImgVis2('none')
+            setChickenImgVis2('none')
+            setAppleImgVis('none')
+            setAppleImgVis2('block')
+            setReturnImgVis('inline-block')
+            setReturnImgVis2('none')
+            setReturnImgVis3('none')
+            setReturnImgVis4('none')
+            setWatermelonImgVis('inline-block')
+            setBeefImgVis('inline-block')
+            setChickenImgVis('inline-block')
+            
         }
         else {
             setAppleVis("none")
             setDefaultVis("block")
             setCurrentFood('none')
+            setReturnImgVis('none')
+            setAppleImgVis('inline-block')
+            setAppleImgVis2('none')
+            
         }
     }
 
@@ -72,11 +103,26 @@ function Homepage() {
             setChickenQualityVis('none')
             setSettingsVis('none')
             setCurrentFood('beef')
+            setAppleImgVis2('none')
+            setWatermelonImgVis2('none')
+            setChickenImgVis2('none')
+            setBeefImgVis('none')
+            setBeefImgVis2('block')
+            setReturnImgVis('none')
+            setReturnImgVis2('none')
+            setReturnImgVis3('inline-block')
+            setReturnImgVis4('none')
+            setAppleImgVis('inline-block')
+            setWatermelonImgVis('inline-block')
+            setChickenImgVis('inline-block')
         }
         else {
             setBeefVis("none")
             setDefaultVis("block")
             setCurrentFood('none')
+            setBeefImgVis('inline-block')
+            setBeefImgVis2('none')
+            setReturnImgVis3('none')
         }
     }
 
@@ -94,11 +140,26 @@ function Homepage() {
             setChickenQualityVis('none')
             setSettingsVis('none')
             setCurrentFood('watermelon')
+            setAppleImgVis2('none')
+            setBeefImgVis2('none')
+            setChickenImgVis2('none')
+            setWatermelonImgVis('none')
+            setWatermelonImgVis2('block')
+            setReturnImgVis('none')
+            setReturnImgVis2('inline-block')
+            setReturnImgVis3('none')
+            setReturnImgVis4('none')
+            setAppleImgVis('inline-block')
+            setBeefImgVis('inline-block')
+            setChickenImgVis('inline-block')
         }
         else {
             setWatermelonVis("none")
             setDefaultVis("block")
             setCurrentFood('none')
+            setWatermelonImgVis('inline-block')
+            setWatermelonImgVis2('none')
+            setReturnImgVis2('none')
         }
     }
 
@@ -116,108 +177,127 @@ function Homepage() {
             setAppleQualityVis('none')
             setSettingsVis('none')
             setCurrentFood('chicken')
+            setAppleImgVis2('none')
+            setBeefImgVis2('none')
+            setWatermelonImgVis2('none')
+            setChickenImgVis('none')
+            setChickenImgVis2('block')
+            setReturnImgVis('none')
+            setReturnImgVis2('none')
+            setReturnImgVis3('none')
+            setReturnImgVis4('inline-block')
+            setAppleImgVis('inline-block')
+            setBeefImgVis('inline-block')
+            setWatermelonImgVis('inline-block')
         }
         else {
             setChickenVis("none")
             setDefaultVis("block")
             setCurrentFood('none')
+            setChickenImgVis('inline-block')
+            setChickenImgVis2('none')
+            setReturnImgVis4('none')
         }
     }
 
     const LeftButtonClick = () => {
-        if (DefaultQualityVis === "block"){
-            setDefaultQualityVis('none')
-            setDefaultVis('block')
-        }
-        if (AppleQualityVis === "block"){
-            setAppleQualityVis('none')
-            setAppleVis('block')
-        }
-
-        else if (BeefQualityVis === "block"){
-            setBeefQualityVis('none')
-            setBeefVis('block')
-        }
-
-        else if (WatermelonQualityVis === "block"){
-            setWatermelonQualityVis('none')
-            setWatermelonVis('block')
-        }
-
-        else if (ChickenQualityVis === "block"){
-            setChickenQualityVis('none')
-            setChickenVis('block')
-        }
-
-        else if (SettingsVis === "block"){
-            setSettingsVis('none')
-            if (CurrentFood === 'none'){
-                setDefaultQualityVis('block')
+        if (status === 'block'){
+            if (DefaultQualityVis === "block"){
+                setDefaultQualityVis('none')
+                setDefaultVis('block')
             }
-            else if (CurrentFood === 'apple'){
-                setAppleQualityVis('block')
+            else if (AppleQualityVis === "block"){
+                setAppleQualityVis('none')
+                setAppleVis('block')
             }
-            else if (CurrentFood === 'beef'){
-                setBeefQualityVis('block')
+
+            else if (BeefQualityVis === "block"){
+                setBeefQualityVis('none')
+                setBeefVis('block')
             }
-            else if (CurrentFood === 'watermelon'){
-                setWatermelonQualityVis('block')
+
+            else if (WatermelonQualityVis === "block"){
+                setWatermelonQualityVis('none')
+                setWatermelonVis('block')
             }
-            else if (CurrentFood === 'chicken'){
-                setChickenQualityVis('block')
+
+            else if (ChickenQualityVis === "block"){
+                setChickenQualityVis('none')
+                setChickenVis('block')
+            }
+
+            else if (SettingsVis === "block"){
+                setSettingsVis('none')
+                if (CurrentFood === 'none'){
+                    setDefaultQualityVis('block')
+                }
+                else if (CurrentFood === 'apple'){
+                    setAppleQualityVis('block')
+                }
+                else if (CurrentFood === 'beef'){
+                    setBeefQualityVis('block')
+                }
+                else if (CurrentFood === 'watermelon'){
+                    setWatermelonQualityVis('block')
+                }
+                else if (CurrentFood === 'chicken'){
+                    setChickenQualityVis('block')
+                }
             }
         }
     }
 
     const RightButtonClick = () => {
 
-        if (DefaultVis === 'block'){
-            setDefaultVis('none')
-            setDefaultQualityVis('block')
-        }
-        else if (AppleVis === "block"){
-            setAppleVis("none")
-            setAppleQualityVis("block")
-        }
+        if (status === 'block'){
+            if (DefaultVis === 'block'){
+                setDefaultVis('none')
+                setDefaultQualityVis('block')
+            }
+            else if (AppleVis === "block"){
+                setAppleVis("none")
+                setAppleQualityVis("block")
+            }
 
-        else if (BeefVis === "block"){
-            setBeefVis("none")
-            setBeefQualityVis("block")
-        }
+            else if (BeefVis === "block"){
+                setBeefVis("none")
+                setBeefQualityVis("block")
+            }
 
-        else if (WatermelonVis === "block"){
-            setWatermelonVis("none")
-            setWatermelonQualityVis("block")
-        }
+            else if (WatermelonVis === "block"){
+                setWatermelonVis("none")
+                setWatermelonQualityVis("block")
+            }
 
-        else if (ChickenVis === "block"){
-            setChickenVis("none")
-            setChickenQualityVis("block")
-        }
+            else if (ChickenVis === "block"){
+                setChickenVis("none")
+                setChickenQualityVis("block")
+            }
 
-        else if (DefaultQualityVis === 'block'){
-            setDefaultQualityVis('none')
-            setSettingsVis('block')
-        }
+            else if (DefaultQualityVis === 'block'){
+                setDefaultQualityVis('none')
+                setSettingsVis('block')
+            }
 
-        else if (AppleQualityVis === "block"){
-            setAppleQualityVis("none")
-            setSettingsVis('block')
-        }
+            else if (AppleQualityVis === "block"){
+                setAppleQualityVis("none")
+                setSettingsVis('block')
+            }
 
-        else if (BeefQualityVis === "block"){
-            setBeefQualityVis("none")
-            setSettingsVis('block')
-        }
+            else if (BeefQualityVis === "block"){
+                setBeefQualityVis("none")
+                setSettingsVis('block')
+            }
 
-        else if (WatermelonQualityVis === "block"){
-            setWatermelonQualityVis("none")
-            setSettingsVis('block')
-        }
+            else if (WatermelonQualityVis === "block"){
+                setWatermelonQualityVis("none")
+                setSettingsVis('block')
+            }
 
-        else if (ChickenQualityVis === "block"){
-            setChickenQualityVis("none")
-            setSettingsVis('block')
+            else if (ChickenQualityVis === "block"){
+                setChickenQualityVis("none")
+                setSettingsVis('block')
+            }
         }
     }
 
@@ -225,10 +305,18 @@ function Homepage() {
     <div>
         <Title/>
         <Scale img = {ScaleImg}/>
-        <Food img = {Apple}/>
-        <Food img = {Watermelon}/>
-        <Food img = {Beef}/>
-        <Food img = {Chicken}/>
+        <Food img = {Apple} Visibility = {AppleImgVis}/>
+        <Food img = {Return} Visibility = {ReturnImgVis}/>
+        <Food img = {Watermelon} Visibility = {WatermelonImgVis}/>
+        <Food img = {Return} Visibility = {ReturnImgVis2}/>
+        <Food img = {Beef} Visibility = {BeefImgVis}/>
+        <Food img = {Return} Visibility = {ReturnImgVis3}/>
+        <Food img = {Chicken} Visibility = {ChickenImgVis}/>
+        <Food img = {Return} Visibility = {ReturnImgVis4}/>
+        <FoodOnScale img = {Apple} Visibility = {AppleImgVis2}/>
+        <FoodOnScale img = {Beef} Visibility = {BeefImgVis2}/>
+        <FoodOnScale img = {Watermelon} Visibility = {WatermelonImgVis2}/>
+        <FoodOnScale img = {Chicken} Visibility = {ChickenImgVis2}/>
         <div style={{display: status}}>
             <Screen
                 //default screen
