@@ -1,0 +1,9 @@
+.TareButton button{
+    height: 30px;
+    width: 67px;
+    position: absolute;
+    left: 464px;
+    background: transparent;
+    top: 630px;
+    border: none;
+}

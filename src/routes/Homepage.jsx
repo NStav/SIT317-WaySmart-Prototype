@@ -9,6 +9,7 @@ import ScreenButtons from '../ScreenButtons';
 import QualityScreen from '../QualityScreen';
 import Food from '../Food'
 import FoodOnScale from '../FoodOnScale';
+import TareButton from '../TareButton';
 
 import ScaleImg from "../img/Scale(Figma).png"
 import Chicken from "../img/chicken.png"
@@ -76,8 +77,8 @@ function Homepage() {
             setWatermelonImgVis('inline-block')
             setBeefImgVis('inline-block')
             setChickenImgVis('inline-block')
-            
         }
+
         else {
             setAppleVis("none")
             setDefaultVis("block")
@@ -85,7 +86,6 @@ function Homepage() {
             setReturnImgVis('none')
             setAppleImgVis('inline-block')
             setAppleImgVis2('none')
-            
         }
     }
 
@@ -198,6 +198,33 @@ function Homepage() {
             setChickenImgVis2('none')
             setReturnImgVis4('none')
         }
+    }
+
+    const TareButtonClick = () => {
+        setDefaultVis("block")
+        setDefaultQualityVis('none')
+        setAppleVis("none")
+        setAppleQualityVis('none')
+        setBeefVis("none")
+        setBeefQualityVis('none')
+        setWatermelonVis('none')
+        setWatermelonQualityVis('none')
+        setChickenVis('none')
+        setChickenQualityVis('none')
+        setSettingsVis('none')
+        setCurrentFood('none')
+        setBeefImgVis2('none')
+        setWatermelonImgVis2('none')
+        setChickenImgVis2('none')
+        setAppleImgVis2('none')
+        setReturnImgVis('none')
+        setReturnImgVis2('none')
+        setReturnImgVis3('none')
+        setReturnImgVis4('none')
+        setAppleImgVis('inline-block')
+        setWatermelonImgVis('inline-block')
+        setBeefImgVis('inline-block')
+        setChickenImgVis('inline-block')
     }
 
     const LeftButtonClick = () => {
@@ -446,6 +473,7 @@ function Homepage() {
             function1 = {LeftButtonClick}
             function3 = {RightButtonClick}
         />
+        <TareButton function = {TareButtonClick}/>
     </div>
     );
 }

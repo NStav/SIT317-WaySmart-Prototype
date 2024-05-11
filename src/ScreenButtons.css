@@ -5,7 +5,7 @@
     left: 97px;
     background: transparent;
     top: 664px;
-    /*border: none;*/
+    border: none;
 }
 .ScreenButton2 button{
     height: 39px;
@@ -23,5 +23,5 @@
     left: 226px;
     background: transparent;
     top: 664px;
-    /*border: none;*/
+    border: none;
 }
